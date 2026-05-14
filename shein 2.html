@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[E-MAGAZINE] Đường Đua Khốc Liệt Của Shein Tại Việt Nam (2024-2026)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Grotesk:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b0b0b;
+            --text-color: #f5f5f7;
+            --accent-color: #ff3366; /* Neon Pink/Red đặc trưng fast fashion */
+            --sub-accent: #00f0ff; /* Cyan bổ trợ */
+            --card-bg: #16161a;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', sans-serif;
+            --font-mono: 'Space Grotesk', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.8;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero Banner Section with Parallax Effect */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(11,11,11,1)), 
+                              url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .emag-tag {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            text-shadow: 2px 4px 20px rgba(0,0,0,0.6);
+        }
+
+        .meta-info {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: #86868b;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .meta-info strong {
+            color: var(--text-color);
+        }
+
+        /* Container & Sapo */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .sapo {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #d2d2d7;
+            font-style: italic;
+            margin: 80px 0;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #ffffff;
+            position: relative;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #ceced2;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        /* Infographic LATR styling */
+        .infographic-latr {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .info-title {
+            text-align: center;
+            font-family: var(--font-mono);
+            color: var(--sub-accent);
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .latr-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .latr-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .split-container { flex-direction: column !important; }
+        }
+
+        .latr-box {
+            background: rgba(255,255,255,0.02);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 3px solid var(--accent-color);
+        }
+
+        .latr-num {
+            font-family: var(--font-mono);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .latr-box h4 {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .latr-box p {
+            font-size: 0.85rem;
+            color: #86868b;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Split Screen Section */
+        .split-container {
+            display: flex;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .split-left, .split-right {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            min-height: 350px;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .split-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.8);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--sub-accent);
+        }
+
+        /* Quote component */
+        .big-quote {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .big-quote blockquote {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: #ffffff;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        /* Table design */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        th {
+            background-color: rgba(255,255,255,0.02);
+            font-family: var(--font-mono);
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        td strong {
+            color: #fff;
+        }
+
+        /* Inline Full-width Image Showcase */
+        .showcase-img {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            height: 50vh;
+            background-image: url('https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        /* Legal list styling */
+        .legal-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .legal-list li {
+            background: rgba(255,51,102,0.05);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        /* Footer styling */
+        footer {
+            background: #000;
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .footer-credit {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: #636366;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 60px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        .team-title {
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .team-image-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .team-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="emag-tag">E-Magazine Special Report</p>
+            <h1>Đế Chế Thời Trang Nhanh 2.0<br>Và Cuộc Chiến Giành Giật Không Gian Số Việt Nam</h1>
+            <div class="meta-info">
+                <div>TÁC GIẢ: <strong>GROUP 1</strong></div>
+                <div>THỜI GIAN: <strong>THÁNG 05/2026</strong></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <article class="sapo">
+            Không còn là một ứng dụng mua sắm xuyên biên giới âm thầm, giai đoạn 2024 - 2026 chứng kiến những bước đi đầy tham vọng của Shein tại thị trường Việt Nam. Bằng việc cắm rễ một kho hàng khổng lồ tại Long An và "bơm" hàng nghìn mẫu mã mới mỗi ngày vào nguồn trung chuyển số, Shein đang định nghĩa lại cuộc chơi thời trang. Nhưng liệu công thức "Real-time Retail" (Bán lẻ thời gian thực) có đủ giúp gã khổng lồ này vượt qua những rào cản pháp lý mới và các đối thủ sừng sỏ tại bản địa?
+        </article>
+
+        <section>
+            <h2>1. Công Thức "Thần Tốc": Từ Ý Tưởng Đến Tay Người Dùng Trong 3 Ngày</h2>
+            <p>Thay vì dự đoán xu hướng như các hãng thời trang truyền thống, Shein áp dụng một tư duy hoàn toàn khác biệt: Để thuật toán và chính người dùng tự quyết định sản phẩm tiếp theo. Mô hình bán lẻ thời gian thực (Real-time retail) biến toàn bộ chuỗi cung ứng của hãng thành một thực thể sống động, có khả năng phản ứng ngay lập tức với mọi biến động thị hiếu của Gen Z Việt Nam.</p>
+            
+            <div class="infographic-latr">
+                <div class="info-title">Quy Trình Thử Nghiệm & Đặt Hàng Lại Tự Động Quy Mô Lớn (LATR)</div>
+                <div class="latr-grid">
+                    <div class="latr-box">
+                        <div class="latr-num">01</div>
+                        <h4>Quét Xu Hướng</h4>
+                        <p>AI liên tục phân tích dữ liệu mạng xã hội.</p>
+                    </div>
+                    <div class="latr-box">
+                        <div class="latr-num">02</div>
+                        <h4>Sản Xuất Thử</h4>
+                        <p>Lô hàng cực nhỏ từ 50-100 sản phẩm.</p>
+                    </div>
+                    <div class="latr-box">
+                        <div class="latr-num">03</div>
+                        <h4>Lên Sàn Số</h4>
+                        <p>Chỉ mất 3-7 ngày để sản phẩm hiển thị trên App.</p>
+                    </div>
+                    <div class="latr-box">
+                        <div class="latr-num">04</div>
+                        <h4>Tái Đặt Hàng</h4>
+                        <p>Tự động kích hoạt quy mô lớn nếu "cháy hàng".</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>Để hiện thực hóa tốc độ kinh hoàng này ngay tại thị trường nội địa Việt Nam, Shein đã thực hiện một nước đi hạ tầng táo bạo: Chuyển dịch từ kho hàng biên giới về lưu trữ sâu bên trong lãnh thổ Việt Nam nhằm tối ưu hóa hành trình logistics chặng cuối.</p>
+
+            <div class="split-container">
+                <div class="split-left" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80');">
+                    <div class="split-label">Hạ Tầng Tổng Kho Long An (~15 ha)</div>
+                </div>
+                <!-- Sửa lại ảnh cho phần giao hàng -->
+                <div class="split-right" style="background-image: url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?auto=format&fit=crop&w=800&q=80');">
+                    <div class="split-label">Thời Gian Giao Hàng: 7 - 15 Ngày</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Tâm Lý Học Gen Z & Cơn Nghiện "Shoppertainment"</h2>
+            
+            <div class="big-quote">
+                <blockquote>"Mua sắm không chỉ là để mặc, đó là một hình thức giải trí. Hiệu ứng FOMO (Sợ bỏ lỡ) chính là chiếc chìa khóa vạn năng mở ví tiền của thế hệ số."</blockquote>
+            </div>
+
+            <p>Chiến lược tiếp thị của Shein trong giai đoạn 2024-2026 tại Việt Nam không nằm trên các pano quảng cáo ngoài trời hào nhoáng, nó phủ sóng toàn diện thông qua thế trận gọng kìm kỹ thuật số: <strong>TikTok, Instagram và YouTube</strong>.</p>
+        </section>
+
+        <div class="showcase-img"></div>
+
+        <section>
+            <h2>3. Bản Đồ Đại Chiến Thương Mại Điện Tử Việt Nam</h2>
+            <p>Bước sang năm 2026, chiếc bánh thị phần TMĐT Việt Nam đã được định hình lại vô cùng khốc liệt.</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Đối thủ cạnh tranh</th>
+                            <th>Thị phần & Đặc trưng (2025-2026)</th>
+                            <th>Vũ khí cốt lõi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Shopee</strong></td>
+                            <td>Chiếm ~56% thị phần toàn cảnh</td>
+                            <td>Mạng lưới logistics nội địa phủ kín.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TikTok Shop</strong></td>
+                            <td>Tăng trưởng bùng nổ lên ~41% thị phần</td>
+                            <td>Siêu phiên Livestream.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temu</strong></td>
+                            <td>Kẻ thách thức trực tiếp từ giá</td>
+                            <td>Chiến lược giá cực thấp.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. "Gót Chân Achilles" Và Lưới Lọc Pháp Lý Mới</h2>
+            <ul class="legal-list">
+                <li><strong>Nghĩa vụ Thuế Xuyên Biên Giới:</strong> Bắt buộc kê khai, minh bạch doanh thu.</li>
+                <li><strong>Xác Thực Danh Tính Điện Tử:</strong> Kiểm soát nghiêm ngặt người bán.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 50px;">
+            <h2>Lời Kết: Tương Lai Nào Cho Mô Hình Real-time?</h2>
+            <p>Mô hình bán lẻ thời gian thực chứng minh Shein xác định Việt Nam là vùng lõi chiến lược lâu dài. Tuy nhiên, khi người tiêu dùng ngày càng thông minh, khắt khe hơn, "gã khổng lồ" này bắt buộc phải tiến hóa.</p>
+        </section>
+
+        <!-- Ảnh nhóm tác giả -->
+        <section class="team-section">
+            <h3 class="team-title">Đội ngũ thực hiện</h3>
+            <div class="team-image-container">
+                <img src="https://files.catbox.moe/54v6r9.png" alt="Nhóm tác giả" class="team-image">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">SHEIN MARKET REPORT (2024-2026)</div>
+        <div class="footer-credit">© 2026 Thực hiện bởi: Group 1.</div>
+    </footer>
+
+</body>
+</html>
